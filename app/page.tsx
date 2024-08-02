@@ -1,5 +1,5 @@
-import Image from "next/image";
+import { Toggle } from "@/components/toggle";
 
 export default function Home() {
-  return <div></div>;
+  return <div>{/* <Toggle /> */}</div>;
 }
