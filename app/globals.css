@@ -78,12 +78,13 @@
   background-image: url("../assets/10016491_27230.jpg");
   background-size: cover;
   background-position: center;
-  min-height: 100vh;
-  display: flex;
+  min-height: 140vh;
   z-index: -2;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
+}
+@media (max-width: 767px) {
+  .landing {
+    min-height: 160vh;
+  }
 }
 
 .hero-container {
@@ -112,4 +113,30 @@
   .video-background {
     border-radius: 0; /* Remove border radius on mobile */
   }
+}
+
+/* 
+commponents !
+*/
+.text-gradient-1 {
+  background: linear-gradient(
+    to bottom,
+    #f26f4e,
+    #bd6d59,
+    #be8c7f,
+    #e1b99a
+  ); /* التدرج من الأعلى للأسفل */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.text-gradient-2 {
+  background: linear-gradient(
+    to bottom,
+    #ffffff,
+    #c2c2c2,
+    #989595d9,
+    #35343494
+  ); /* التدرج من الأعلى للأسفل */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
